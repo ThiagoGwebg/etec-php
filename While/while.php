@@ -1,14 +1,16 @@
 <?php
 
 $i = 1;
-$j = 0;
+
 
 while($i < 10){
+    $j = 1;
     while($j < 10){
         $resultado = $i * $j;
         echo $i ."x".$j."=".$resultado."<br>";
         $j += 1;
     }
+    if($i == 5) break;
 
     $j += 1;
 
